@@ -1,0 +1,311 @@
+<header id="header">
+    <div class="search-box">
+        <form name="" method="" target="">
+            <fieldset>
+                <legend>전체 검색</legend>
+                <div class="row align-items-center row-10">
+                    <div class="col">
+                        <input type="text" name="" placeholder="검색어를 입력하세요" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <input type="submit" value="검색하기" class="btn btn-primary btn-block">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="inner">
+        <h1 class="logo"><a href="../main/main.html"><img src="../../resources/images/common/logo.png" alt="여성관리자패널조사"><span>여성관리자패널조사</span></a></h1>
+        <nav id="gnb">
+            <ul class="clfix">
+                <li class="depth1">
+                    <a href="../about/intro.html"><span>조사소개</span></a>
+                    <ul class="depth2">
+                        <li><a href="../about/intro.html">조사개요</a></li>
+                        <li><a href="../about/sample.html">표본설계</a></li>
+                        <li><a href="../about/value.html">가중치</a></li>
+                        <li><a href="../about/survey.html">설문내용</a></li>
+                        <li><a href="../about/researchers.html">연구진 소개</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="../data/download_list.html"><span>데이터</span></a>
+                    <ul class="depth2">
+                        <li><a href="../data/download_list.html">데이터 다운로드</a></li>
+                        <li><a href="../data/codebook_list.html">설문지&nbsp;코드북</a></li>
+                        <li><a href="../data/etc_list.html">기타자료</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="../report/annual_list.html"><span>보고서</span></a>
+                    <ul class="depth2">
+                        <li><a href="../report/annual_list.html">연간 보고서</a></li>
+                        <li><a href="../report/research_list.html">활용 연구 및 논문</a></li>
+                        <li><a href="../report/issue_list.html">이슈페이퍼</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="../forum/forum_list.html"><span>포럼 및 심포지움</span></a>
+                    <ul class="depth2">
+                        <li><a href="../forum/forum_list.html">포럼</a></li>
+                        <li><a href="../forum/symposium_list.html">심포지움</a></li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="../info/notice_list.html"><span>안내</span></a>
+                    <ul class="depth2">
+                        <li><a href="../info/notice_list.html">공지사항</a></li>
+                        <li><a href="../info/qna_list.html">문의하기</a></li>
+                        <li><a href="../info/relation_site.html">관련사이트</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+       
+        <button class="mobile-btn"><span></span><em class="sr-only">전체메뉴 열기</em></button>
+        <nav id="m-gnb">
+            <!-- <div class="util">
+                <ul>
+                    <li><a href="#none" data-toggle="modal" data-target="#modalJoin">회원가입</a></li>
+                    <li><a href="#none" data-toggle="modal" data-target="#modalLogin">로그인</a></li>
+                </ul>
+            </div> -->
+            <button class="btn-close"><span class="sr-only">전체메뉴 닫기</span></button>
+        </nav>
+        <div class="dimmed"></div>
+    </div>
+    <div class="bg-gnb"></div>
+</header>
+
+
+<!-- modal : 로그인 -->
+<div class="modal" tabindex="-1" role="dialog" id="modalLogin">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">로그인</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form name="form" action="" method="post">
+                    <fieldset>
+                        <legend>로그인</legend>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="아이디">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control form-control-lg" placeholder="비밀번호">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-lg btn-primary btn-block">로그인</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="text-center mt-4">
+                    <a href="#" id="btnFind">아이디 / 비밀번호 찾기</a> · <a href="#" id="btnJoin">회원가입</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal : 아이디/비밀번호 찾기 -->
+<div class="modal" tabindex="-1" role="dialog" id="modalFind">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">아이디 / 비밀번호 찾기 </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="subText mb-4">아이디 찾기</p>
+                <form name="form" action="" method="post">
+                    <fieldset>
+                        <legend>아이디 찾기</legend>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="이름">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="이메일">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-lg btn-primary btn-block">아이디 찾기</button>
+                        </div>
+                    </fieldset>
+                </form>
+                <p class="subText mb-4 mt-5">비밀번호 찾기</p>
+                <form name="form" action="" method="post">
+                    <fieldset>
+                        <legend>비밀번호 찾기</legend>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-lg" placeholder="아이디">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-lg" placeholder="이메일">
+                        </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-lg btn-primary btn-block">비밀번호 찾기</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal : 회원가입 -->
+<div class="modal" tabindex="-1" role="dialog" id="modalJoin">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">회원가입</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="joining">
+                    <form name="joinForm" action="" method="post">
+                        <div class="board-form">
+                            <p class="text-right mb-2"><span class="text-danger">*</span> 표시 항목은 필수입력사항입니다.</p>
+                            <table>
+                                <caption>개인정보</caption>
+                                <colgroup>
+                                    <col style="width: 150px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"><span class="text-danger">*</span>아이디</th>
+                                        <td>
+                                            <input type="text" title="아이디" name="joinId" class="form-control" placeholder="영문포함 6글자 이상" required="">
+                                            <span role="alert" class="validation idTxt" id="idTxt"></span>
+                                            <!-- 사용불가 or 불일치 시 : input 'error' 클래스 -->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-danger">*</span>비밀번호</th>
+                                        <td>
+                                            <input type="password" title="비밀번호" name="pass" id="pass" class="form-control" placeholder="영문(대문자 포함) + 숫자 조합으로 8자 이상" required="">
+                                            <span role="alert" class="validation passTxt" id="passTxt"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-danger">*</span>비밀번호 확인</th>
+                                        <td>
+                                            <input type="password" title="비밀번호 확인" name="passChk" id="passChk" class="form-control" placeholder="영문(대문자 포함) + 숫자 조합으로 8자 이상" required="">
+                                            <span role="alert" class="validation passChkTxt" id="passChkTxt"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-danger">*</span>이름</th>
+                                        <td>
+                                            <input type="text" title="이름" name="pt_name" id="pt_name" class="form-control" maxlength="20">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-danger">*</span>생년월일</th>
+                                        <td>
+                                            <input type="text" title="생년월일" name="birth" class="form-control" placeholder="1980년 3월 20일인 경우 : 19800320" maxlength="8">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">휴대폰번호</th>
+                                        <td>
+                                            <input type="text" title="휴대폰번호" name="ptHp_no" class="form-control" placeholder="휴대폰번호 (숫자만)" maxlength="11">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-danger">*</span>이메일</th>
+                                        <td>
+                                            <input type="text" title="이메일" name="mail" class="form-control" maxlength="50" required="">
+                                            <span role="alert" class="validation emailChkTxt" id="emailChkTxt"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><span class="text-danger">*</span>주소</th>
+                                        <td>
+                                            <div class="address">
+                                                <div class="row row-10">
+                                                    <div class="col">
+                                                        <input type="text" title="기본주소" name="baseAddr" readonly="readonly"  class="form-control">
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <button type="button" class="btn btn-dark">주소검색</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <input type="text" title="상세주소" name="addr2" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                    <h6 class="mt-4 mb-2">이용약관</h6>
+                    <div class="term">
+                        <textarea name="" id="" rows="4" class="form-control"></textarea>
+                    </div>
+                    <div class="check-block">
+                        <input type="checkbox" id="sign01">
+                        <label for="sign01" class="check-label">여성관리자패널조사 회원 이용 약관에 동의합니다.</label>
+                        <span class="check-icon"><i class="far fa-check-circle"></i></span>
+                    </div>
+                    <h6 class="mt-4 mb-2">개인정보 수집 및 이용에 대한 안내</h6>
+                    <div class="term">
+                        <textarea name="" id="" rows="4" class="form-control"></textarea>
+                    </div>
+                    <div class="check-block">
+                        <input type="checkbox" id="sign02">
+                        <label for="sign02" class="check-label">개인정보처리방침에 동의합니다.</label>
+                        <span class="check-icon"><i class="far fa-check-circle"></i></span>
+                    </div>
+                    <div class="check-block check-block-all">
+                        <input type="checkbox" id="agreeAll">
+                        <label for="agreeAll" class="check-label">약관에 모두 동의합니다.</label>
+                        <span class="check-icon"><i class="far fa-check-circle"></i></span>
+                    </div>
+                    <div class="btns">
+                        <button type="button" class="btn btn-primary btn-lg">회원가입</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('#btnFind').on('click',function(){
+            $('.modal').modal('hide');
+            $('#modalFind').modal('show');
+        });
+        $('#btnJoin').on('click',function(){
+            $('.modal').modal('hide');
+            $('#modalJoin').modal('show');
+        });
+
+        //전체 동의
+        $('.check-block-all input').on('change',function(){
+            if($(this).is(':checked')){
+                $('.check-block:not(.check-block-all) input').prop('checked',true);
+            }else{
+                $('.check-block:not(.check-block-all) input').prop('checked',false);
+            }
+        });
+        $('.check-block:not(.check-block-all) input').on('change',function(){
+            var length = $('.check-block:not(.check-block-all) input:checked').length;
+            if(length === 2){
+                $('.check-block-all input').prop('checked',true);
+            }else{
+                $('.check-block-all input').prop('checked',false);
+            }
+        });
+    });
+</script>

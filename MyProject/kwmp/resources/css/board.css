@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* sort */
+.board-sort {padding:16px 28px 16px 31px;border:1px solid #ddd;margin-bottom: 20px;}
+.board-sort .info {margin-top:4px;color:#565656;}
+.board-sort .info strong {color:#e82800;}
+.board-sort .fr>span {float:left;}
+.board-sort .fr>span+span {margin-left:10px;padding-left:9px;border-left:1px solid #ddd;}
+.board-sort .btn-search {padding:6px 42px 6px 14px;background:#333 url(../images/icon/icon_search.png) no-repeat 100% 50%;}
+.board-sort input[type=text] {width:190px;}
+
+/* board list */
+.board-list {border-top: 2px solid #223956;}
+.board-list table {}
+.board-list th,
+.board-list td {text-align:center;}
+.board-list th {padding:16px 15px;font-weight:500;border:1px solid #ddd;border-top:none;line-height:1.2;background:#f8f8f8;}
+.board-list td {padding:12px 15px;color:#424242;border-bottom:1px solid #ddd;line-height:1.2;}
+.board-list td.tal {padding-left:35px;padding-right:35px;word-break: break-all;}
+.board-list td.subject a {display:inline-block;overflow:hidden;max-width:100%;text-overflow:ellipsis;white-space:nowrap;}
+.board-list td.num {color:#3a3a3a;}
+
+/* paging */
+.paging{text-align: center;margin-top: 40px;}
+.paging>* {display:inline-block;width: 32px;height: 32px;line-height: 32px;vertical-align: top;font-size: 13px;font-weight: 500;color: #949ca5;}
+.paging [class^="btn-"]{position: relative; overflow:hidden; width:34px;height: 0; padding: 32px 0 0; text-indent:-5000px;border:1px solid #ddd;border-radius:50%;background: url(../images/bg/bg_btn_navi.png) no-repeat -4px 0;}
+.paging .btn-prev{background-position: -44px 0;}
+.paging .btn-next{background-position: -83px 0;}
+.paging .btn-end{background-position: -123px 0;}
+.paging .current{border-radius:50% 0 50% 50%;color:#fff;background:#092b83;}
+
+.boardView {border-top: 2px solid #222;}
+.boardView .head {padding: 29px 0 30px;border-bottom: 1px solid #ddd;text-align: center}
+.boardView .head em {color: #12b8ba;font-size: 20px;font-weight: 400;display: block;margin-bottom: 10px}
+.boardView .head .title {color: #000;font-size: 30px;font-weight: 500}
+.boardView .head p {margin-top: 5px;font-size: 18px}
+.boardView .foot {position: relative;min-height: 55px;padding: 15px 295px 15px 100px;border-bottom: 1px solid #ddd}
+.boardView .foot:after,
+.boardView .foot:before {content: '';display: table}
+.boardView .foot:after {clear: both}
+.boardView .foot .right {position: absolute;top: 15px;right: 40px}
+.boardView .foot strong {color: #000;font-weight: 500;margin: 0 19px 0 40px}
+.boardView .foot strong:first-child {margin-left: 0}
+.boardView .foot .file {position: absolute;top: 15px;left: 40px}
+.boardView .foot .icon-file {display: inline-block;margin-right: 35px}
+.boardView .reply{background-color: #f4f4f4;padding: 30px;margin-bottom: 30px;}
+.boardView .body {position: relative;min-height: 500px;padding: 30px 30px 100px}
+.boardView .body .list {margin-bottom: 10px}
+.boardView .body .list li {color: #666;font-weight: 400}
+.boardView .body .list li+li {margin-top: 9px}
+.boardView .body .btnWrap {position: absolute;bottom: 50px;width: 100%}
+.boardView .page {border-top: 1px solid #ddd}
+.boardView .page>div {padding: 11px 40px 17px;border-bottom: 1px solid #ddd}
+.boardView .page>div strong {color: #000;font-weight: 500;margin-right: 40px}
+.boardView .page>div a,
+.boardView .page>div span,
+.boardView .page>div strong {display: inline-block;vertical-align: middle}
+.boardView .page>div a {overflow: hidden;text-overflow: ellipsis;word-break: break-all;white-space: nowrap;max-width: 70%;color: #666}
+
+.board-form table{border-top: 2px solid #223956;}
+.board-form table tbody th,
+.board-form table tbody td{vertical-align: middle;text-align: left;padding:15px 0;border-bottom: 1px solid #ddd;}
+@media screen and (max-width:768px) {
+    .board-form table,
+    .board-form table tbody,
+    .board-form table tr,
+    .board-form table td,
+    .board-form table th{display: block;}
+    .board-form table tbody th{border-bottom: 0;padding-bottom: 0;}
+    .board-form table tbody td{border-bottom: 0;padding-bottom: 0;padding-top: 5px;}
+}
+
+.filebox label {margin-bottom: 0;}
+.filebox input[type=file] {position: absolute;width: 1px;height: 1px;padding: 0;margin: -1px;overflow: hidden;clip: rect(0, 0, 0, 0);border: 0;}
+.filebox .upload-name {display: inline-block;width: calc(100% - 80px);padding: 0.345rem 0 0.345rem 0.5rem;font-size: 1rem;vertical-align: middle;border: 0;-webkit-appearance: none;-moz-appearance: none;appearance: none;}
+ @media (max-width: 991.98px) {
+    .filebox .upload-name {
+        font-size: .875rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .board-sort{margin-bottom: 10px;padding-left:15px;padding-right:15px;}
+    .board-sort .info {width:100%;}
+    .board-sort .fr {margin-top:20px;}
+    .board-list colgroup,
+    .board-list thead {display:none;}
+    .board-list tr {display:block;padding:10px;border-bottom:1px solid #ddd;background:#fff;}
+    .board-list tr:nth-child(odd) {background:#f8f8f8;}
+    .board-list [data-cell-header]:before {content:attr(data-cell-header);display:inline-block;min-width:15%;margin-right:15px;padding-right:10px;border-right:1px solid #ddd;font-weight:600;}
+    .board-list [data-cell-header='국내 패널 조사']:before{display: none;}
+    .board-list th[scope] {display: none;}
+    .board-list td {display:block;width:100%;text-align:left;border-bottom:1px dashed #ddd;font-size:14px;padding: 10px;}
+    .board-list td:last-child {border-bottom:none;}
+    .board-list td.tal {padding-left:10px;padding-right:10px;}
+    .board-list td.subject a {overflow:visible;white-space:normal;}
+    .board-list td.subject:before {display:none;}
+
+    .boardView .head{padding: 15px 0}
+    .boardView .head .title{font-size: 18px;}
+    .boardView .foot{padding: 15px 0;}
+    .boardView .foot .file{position: static;}
+    .boardView .foot .right{position: static;margin-top: 5px;text-align: right;}
+    .boardView .foot strong{margin: 0 10px 0 30px;}
+    .boardView .reply{margin-bottom: 15px;padding: 15px;}
+    .boardView .body{padding: 15px 0;min-height: 300px;}
+    .boardView .page>div{padding: 10px 15px;}
+}
+@media screen and (max-width:620px) {
+    .board-sort .fr,
+    .board-sort .search {width:100%;}
+    .board-sort .search {text-align:right;}
+    .board-sort .sort {display:none;}
+    .board-sort input[type=text]{letter-spacing: -0.05em;width: 160px;}
+    .board-sort .btn i{display: none;}
+}
+
+.gallery-list ul{display: -webkit-box;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;margin: -10px;}
+.gallery-list ul li{max-width: 25%;flex: 0 0 25%;padding: 10px;}
+.gallery-list .box{border: 1px solid #ddd;text-align: center;}
+.gallery-list .box a{display: block;padding: 20px;position: relative;}
+.gallery-list .box a:hover{text-decoration: none;}
+.gallery-list .box a:hover::before{content: '';display: block;width: 100%;height: 100%;position: absolute;left: 0;top: 0;background: rgba(28, 146, 235, 0.5);}
+.gallery-list .box a:hover::after{content: '';display: block;width: 100%;height: 100%;position: absolute;left: 0;top: 0;background: url(../images/icon/icon_search_white.svg) no-repeat 50% 50%;background-size: 72px auto;}
+.gallery-list .thumb img{max-height: 176px;}
+.gallery-list .title{color: #333;font-size: 14px;margin-top: 20px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.gallery-list .date{color: #666;font-size: 12px;margin-top: 3px;}
+@media (max-width: 991.98px) {
+    .gallery-list ul{margin: -10px;}
+    .gallery-list ul li{max-width: 50%;flex: 0 0 50%;padding: 10px;}
+    .gallery-list .box a{padding: 10px;}
+    .gallery-list .title{font-size: 13px;margin-top: 10px;}
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>여성관리자패널조사</title>
+<link rel="icon" href="../../resources/images/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../../resources/images/favicon-128.png" sizes="128x128">
+<link rel="icon" href="../../resources/images/favicon-128.png" sizes="128x128">
+	<link rel="stylesheet" href="../../resources/plugin/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="../../resources/plugin/swiper/css/swiper.min.css">
+<link rel="stylesheet" href="../../resources/css/panel.css">
+<script type="text/javascript" src="../../resources/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../resources/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../resources/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../../resources/plugin/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="../../resources/js/slick.min.js"></script>
+<script type="text/javascript" src="../../resources/js/design.js"></script>
+</head>
+
+<body>
+<div id="wrapper">
+	<!-- header -->
+	<div id="header-block">
+		<!-- header include -->
+	</div>
+	<!-- //header -->
+
+	<!-- container -->
+	<div id="container">
+		<!-- gnb 활성화 -->
+		<span data-depth1 hidden>안내</span>
+		<span data-depth2 hidden>문의하기</span>
+
+		<!-- subVisual -->
+		<div id="subVisual">
+			<div class="small"><span>Guide</span></div>
+			<h2>안내</h2>
+		</div>
+		<!-- //subVisual -->
+
+		<!-- subNavi --->
+		<div id="nav-block">
+			<!-- nav include -->
+		</div>
+		<!-- //subNavi --->
+
+		<!-- contents -->
+		<div id="contents">
+			<div class="title-box">
+				<h3>문의하기</h3>
+			</div>
+
+			<!-- board-form -->
+			<div class="board-form">
+				<table>
+					<caption>문의하기 입력 테이블</caption>
+					<colgroup>
+						<col style="width:20%">
+						<col style="width:80%">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>
+								<label for="">문의제목</label>
+							</th>
+							<td>
+								<input type="text" class="form-control" placeholder="문의하실 내용의 제목을 입력하세요." name="articleTitle" title="문의제목">
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<label for="">작성자</label>
+							</th>
+							<td>
+								<input type="text" class="form-control" name="regrId" title="작성자">
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<label for="">비밀번호</label>
+							</th>
+							<td>
+								<input type="password" class="form-control" name="articlePwd" title="비밀번호">
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<label for="">이메일</label>
+							</th>
+							<td>
+								<input type="email" class="form-control" name="regrId" title="이메일">
+							</td>
+						</tr>
+						<tr>
+							<th>
+								<label for="">문의작성</label>
+							</th>
+							<td class="txt-area type02">
+								<textarea rows="6" class="form-control" name="articleCtnt" title="문의작성"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>첨부파일</th>
+							<td>
+								<div class="filebox">
+									<label for="inputFile" class="btn btn-dark">업로드</label>
+									<input type="file" id="inputFile" class="upload-hidden">
+									<input class="upload-name" value="파일선택" disabled="disabled">
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //board-form -->
+
+			<div class="btns">
+				<button	type="button" class="btn-blue btn-lg">작성완료</button>
+				<button	type="button" class="btn-white btn-lg">취소</button>
+			</div>
+		</div>
+		<!-- //contents  -->
+	</div>
+	<!-- //container -->
+
+	<!-- footer -->
+	<div id="footer-block">
+		<!-- footer include -->
+	</div>
+	<!-- //footer -->
+</div>
+
+<script>
+	$(document).ready(function(){
+		var fileTarget = $('.filebox .upload-hidden');
+
+		fileTarget.on('change', function () { // 값이 변경되면
+			if(window.FileReader){ // modern browser
+			var filename = $(this)[0].files[0].name;
+		} else { // old IE
+				var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
+			} // 추출한 파일명 삽입
+			$(this).siblings('.upload-name').val(filename);
+		});
+});
+</script>
+</body>
+</html>
