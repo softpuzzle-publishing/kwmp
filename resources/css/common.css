@@ -229,6 +229,7 @@ html.open-gnb.open-search .bg-gnb{top: 180px;}
 .title-box {margin:0 0 50px;}
 .title-box h3 {font-size:32px;font-weight:700;color:#223956;}
 .title-box span {display:block;margin-top:13px;font-size:22px;font-weight:300;color:#333;}
+.title-box i{font-size: 20px; vertical-align: middle;margin: 0 5px}
 
 @media (max-width: 1200px) {
   #header .inner{width: 100%;padding: 0 15px;}
@@ -347,9 +348,9 @@ html.open-gnb.open-search .bg-gnb{top: 180px;}
 .round-box-wrap .box{flex: 0 0 50%;;padding-bottom:30px;}
 .round-box-wrap .in{height: 100%;}
 .round-box-wrap .in strong{color: #3a3a3a;font-size: 20px;font-weight: 500;margin-bottom: 8px;display: block;}
-.round-box-wrap .in p{font-size: 20px;font-weight: 500;color:#406da5;margin-bottom:10px;}
+.round-box-wrap .in p{font-size: 20px;font-weight: 700;color:#406da5;margin-bottom:10px;}
 .round-box-wrap .in img{vertical-align: inherit;}
-.round-box-wrap .in li{line-height: 1.56;font-size: 18px;color: #333;font-weight: 300;}
+.round-box-wrap .in li{line-height: 1.56;font-size: 16px;color: #333;}
 @media screen and (max-width:767px) {
   .round-box-wrap{display: block;margin: 0;}
   .round-box-wrap .box{max-width: 100%;padding: 0;margin-bottom: 10px;}
@@ -415,7 +416,7 @@ html.open-gnb.open-search .bg-gnb{top: 180px;}
 .history-bg{background: url('../images/bg/bg_history.png') no-repeat 0 120px;}
 .histroy ol{list-style: none;}
 .histroy ol li{display: flex;flex-wrap: wrap;margin-bottom: 70px;}
-.histroy .year{color:  var(--blue);font-size: 20px;font-weight: 700;margin-right: 42px;}
+.histroy .year{color:#406da5;font-size: 20px;font-weight: 700;margin-right: 42px;}
 .histroy .cont{font-size: 16px;color: #333;}
 @media screen and (max-width:767px) {
   .history-bg{background: none;}
