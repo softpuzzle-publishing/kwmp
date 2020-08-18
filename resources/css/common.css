@@ -413,7 +413,7 @@ html.open-gnb.open-search .bg-gnb{top: 180px;}
   .step ol ul li{font-size: 14px;}
 }
 
-.history-bg{background: url('../images/bg/bg_history.png') no-repeat 0 120px;}
+.history-bg{background: url('../images/bg/ic-history.png') no-repeat 0 120px;}
 .histroy ol{list-style: none;}
 .histroy ol li{display: flex;flex-wrap: wrap;margin-bottom: 70px;}
 .histroy .year{color:#406da5;font-size: 20px;font-weight: 700;margin-right: 42px;}
