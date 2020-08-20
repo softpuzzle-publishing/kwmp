@@ -110,7 +110,7 @@
     .board-sort .search {width:100%;}
     .board-sort .search {text-align:right;}
     .board-sort .sort {display:none;}
-    .board-sort input[type=text]{letter-spacing: -0.05em;width: 160px;}
+    .board-sort input[type=text]{letter-spacing: -0.05em;width: 155px;}
     .board-sort .btn i{display: none;}
 }
 
