@@ -90,7 +90,7 @@ html.open-gnb .main #header .bg-gnb {border-bottom-color:#fff;}
 .scene.three h2 {display:inline-block;position:relative;width:572px;font-size:40px;font-weight:600;color:#fff;}
 .scene.three h2:before {content:"";position:absolute;left:-80px;top:-16px;width:36px;height:80px;border:2px solid #fff;border-right:0;}
 .scene.three h2:after {content:"";position:absolute;right:-80px;top:-16px;width:36px;height:80px;border:2px solid #fff;border-left:0;}
-.scene.three li {position:relative;float:left;width:33.3%;height:250px;}
+.scene.three li {position:relative;float:left;width:25%;height:250px;}
 .scene.three li+li {margin-left:-1px;}
 .scene.three li a {display:flex;flex-direction:column;justify-content:center;position:absolute;z-index:2;left:0;top:0;width:100%;height:100%;border:1px solid #fff;color:#fff;transition:all 0.3s ease-in-out;animation-fill-mode:forwards;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);background-color:rgba(0, 0, 0, 0.4);}
 .scene.three li h3 {font-size:30px;}
