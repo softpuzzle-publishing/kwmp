@@ -194,7 +194,7 @@ html.open-gnb.open-search .bg-gnb{top: 180px;}
 #footer .family-site {background:#fff;border-top: 1px solid #ddd;}
 #footer .family-site .inner{padding: 0;}
 #footer .family-site .swiper-slide{width: 25%;}
-#footer .go-top {display:block;position:absolute;top:11px;right:23px;width:45px;height:45px;text-indent:-5000px;background:url(../images/common/ic_go_top.png) no-repeat;}
+#footer .go-top {display:block;position:absolute;top:11px;right:23px;width:45px;height:45px;text-indent:-5000px;background:url(../images/common/ic_go_top.png) no-repeat;z-index:2;}
 
 .dimmed {display:none;position:fixed;z-index:6;left:0;top:0;width:100%;height:100%;background:#000;opacity:0.6;}
 
