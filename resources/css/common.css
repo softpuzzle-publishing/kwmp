@@ -89,7 +89,10 @@ b{font-weight:500;}
 .pd-1{padding : 5px 15px; font-weight: normal;}
 .dots li{position:relative;padding-left:12px;}
 .dots li:before{position:absolute;left:4px;top:11px;width:2px;height:2px;border-radius:50%;background:#333;content:'';}
-
+.dots li span:nth-child(2){width:80%; text-align: left; word-break: keep-all;}
+@media screen and (max-width:450px){
+  .dots li span:nth-child(2){width:70%; text-align: left;}
+}
 .btn-dg{background-color:#333333;color:#fff;font-size: 14px;}
 .btn-wrap{margin-top:50px;text-align:center;}
 .btn-wrap >* + *{margin-left:17px;}
